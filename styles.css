@@ -108,7 +108,7 @@ footer {
   margin-top: var(--space-lg);
   color: var(--color-text-secondary);
   font-size: 12px;
-  
+
 }/* === DARK MODE === */
 .dark {
   --color-bg: #1a1a1a;
@@ -116,4 +116,26 @@ footer {
   --color-border: #444444;
   --color-text-primary: #f5f5f5;
   --color-text-secondary: #aaaaaa;
+  
+}/* === TYPOGRAPHY SAMPLES === */
+.type-sample {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.type-heading {
+  font-size: var(--font-xl);
+  font-weight: bold;
+  color: var(--color-text-primary);
+}
+
+.type-body {
+  font-size: var(--font-base);
+  color: var(--color-text-primary);
+}
+
+.type-secondary {
+  font-size: var(--font-base);
+  color: var(--color-text-secondary);
 }
