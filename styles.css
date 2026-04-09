@@ -1,0 +1,111 @@
+/* === DESIGN TOKENS === */
+:root {
+  /* Colors */
+  --color-bg: #f5f5f5;
+  --color-surface: #ffffff;
+  --color-border: #e0e0e0;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #666666;
+  --color-brand: #7c3aed;
+
+  /* Spacing */
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+  --space-xl: 64px;
+
+  /* Typography */
+  --font-base: 14px;
+  --font-lg: 20px;
+  --font-xl: 32px;
+  --font-family: Inter, system-ui, sans-serif;
+
+  /* Border */
+  --radius: 8px;
+}/* === RESET & BASE === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-bg);
+  font-family: var(--font-family);
+  font-size: var(--font-base);
+  color: var(--color-text-primary);
+  padding: var(--space-xl);
+}
+
+header {
+  margin-bottom: var(--space-lg);
+}
+
+header h1 {
+  font-size: var(--font-xl);
+  margin-bottom: var(--space-sm);
+}
+
+header p {
+  color: var(--color-text-secondary);
+}/* === LAYOUT === */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+}
+
+section {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-lg);
+  flex: 1 1 280px;
+}
+
+section h2 {
+  font-size: var(--font-lg);
+  margin-bottom: var(--space-sm);
+}
+
+section p {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-md);
+}
+
+/* === COMPONENTS === */
+button {
+  background: var(--color-brand);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--font-base);
+  cursor: pointer;
+}
+
+input[type="text"] {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--font-base);
+  width: 300px;
+}
+
+.card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+}
+
+.card h3 {
+  margin-bottom: var(--space-sm);
+}
+
+/* === FOOTER === */
+footer {
+  margin-top: var(--space-lg);
+  color: var(--color-text-secondary);
+  font-size: 12px;
+}
